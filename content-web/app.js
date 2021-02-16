@@ -6,7 +6,8 @@ const request = require('request');
 const app = express();
 
 app.use(express.static(path.join(__dirname, 'dist/content-web')));
-const contentApiUrl = process.env.CONTENT_API_URL || "http://localhost:3001";
+
+const contentApiUrl = process.env.CONTENT_API_URL || "http://52.249.189.245:3001";
 
 
 function getSessions(cb) {
